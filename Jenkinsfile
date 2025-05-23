@@ -20,7 +20,7 @@ pipeline {
         stage('Deliver'){
             steps {
                fileOperations([
-                    fileCopyOperation(sourceFiles: 'sources/add2vals.py', targetLocation: 'build/bin/')
+                    fileCopyOperation(includes: 'sources/add2vals.py', targetLocation: 'build/bin/')
                 ])
             }
             post{
