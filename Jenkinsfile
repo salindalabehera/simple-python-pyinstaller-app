@@ -19,7 +19,9 @@ pipeline {
         }
         stage('Deliver'){
             steps {
-               sh './publish.sh'
+               fileOperations([
+                    fileCopyOperation(sourceFiles: 'sources/add2vals.py', targetLocation: 'build/bin/')
+                ])
             }
             post{
                success {
