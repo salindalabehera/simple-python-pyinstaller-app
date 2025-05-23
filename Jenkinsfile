@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver'){
             steps {
-               sh 'cp sources/add2vals.py /home/sdalabehera/bin/.'
+               sh 'cp sources/add2vals.py dist/'
             }
             post{
                success {
