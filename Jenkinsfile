@@ -22,7 +22,7 @@ pipeline {
                sh 'pyinstaller --onefile sources/add2vals.py'
             }
             post{
-               sucess {
+               success {
                   archiveArtifacts 'dist/add2vals'
                }
             }
