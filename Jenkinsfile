@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver'){
             steps {
-               sh 'publish.sh'
+               sh './publish.sh'
             }
             post{
                success {
