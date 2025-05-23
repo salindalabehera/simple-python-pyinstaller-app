@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver'){
             steps {
-               sh 'cp sources/add2vals.py dist/'
+               sh 'publish.sh'
             }
             post{
                success {
