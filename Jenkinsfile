@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deliver'){
             steps {
-               sh 'pyinstaller --onefile sources/add2vals.py'
+               sh 'cp sources/add2vals.py /home/sdalabehera/bin/.'
             }
             post{
                success {
